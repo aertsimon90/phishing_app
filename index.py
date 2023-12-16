@@ -32,6 +32,7 @@ else:
 		os.system("cls")
 	else:
 		os.system("clear")
+	print(f"myAppTitle\n")
 	print(f"Bot Account Name: {bot}\n")
 	print("Please enter your myAppName account information")
 	name = input("Enter myAppName account name: ")
